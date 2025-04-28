@@ -1,0 +1,38 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.parent {
+  display: flex;
+  justify-content: space-between; /* Pushes children to opposite ends */
+  align-items: center; /* Vertically centers children (optional) */
+  gap: 20px; /* Adds space between children */
+  padding: 10px; /* Optional: Adds inner spacing */
+  border: 1px solid #ddd; /* Optional: Visual container */
+}
+
+.child {
+  padding: 10px;
+  background: #ffffff;
+  border: 1px solid #ccc;
+}
+
+.divider {
+  height: 300px; 
+  width: 2px;
+  background: #ccc;
+}
+.search-box {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+}
+.search-input {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
