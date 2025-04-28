@@ -1,4 +1,6 @@
-# React + Vite
+# React + Vite +  Spring Boot for serving the API
+
+#  This read me include React set up  + Spring Boot Server set up instructions # 
 
 # Technology & Requirements
 
@@ -12,9 +14,9 @@ cities present within the API.
 Public API - https://samples.openweathermap.org/data/2.5/box/city?bbox=12,32,15,37,10&appid=b6907d289e10d714a6e88b30761fae22
 
 
-# Installation and set up instructions
+# Installation and set up instructions React
 
-git clone https://github.com/your-username/simple-react-project.git
+git clone https://github.com/kishorjoseph/city-app.git
 
 cd city-app
 
@@ -29,6 +31,38 @@ npm install
 npm start
 
 Vite config updated to auto open the browser at port  http://localhost:3001/
+
+
+# # # # # # # # # # # # # # # #  SERVER SET UP # # # # # # # # # # 
+
+
+# Installation and set up instructions Spring Boot Server for the API
+
+Clone the repository from - https://github.com/kishorjoseph/weather-app
+
+Navigate to the directory and install the maven dependencies - mvn clean install
+
+Run the spring boot project - mvn spring-boot:run
+
+Notes - Project port configured to run on 8080 inside resources
+
+End points available to test from postman or from React from end
+
+http://localhost:8080/api/weather/citycount?cityname=
+
+http://localhost:8080/api/weather
+
+If maven not installed -
+
+brew install maven # (if using Homebrew)
+
+then cd path to project and do an mvn clean install.
+
+Alternatively , project can be loaded into intellijIDE and run the main application to serve the API
+
+
+
+
 
 
 
